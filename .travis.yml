@@ -14,4 +14,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T lession1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uvovandro:$BINTRAY_API_KEY "https://api.bintray.com/content/vovandro/lession/$TRAVIS_BUILD_NUMBER/lession1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;bt_package=homeword;bt_version=$TRAVIS_BUILD_NUMBER"
+  - curl -T lession1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uvovandro:$BINTRAY_API_KEY https://api.bintray.com/content/vovandro/lession/$TRAVIS_BUILD_NUMBER/lession1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;bt_package=homeword;bt_version=$TRAVIS_BUILD_NUMBER
